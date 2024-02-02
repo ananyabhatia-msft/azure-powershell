@@ -14,9 +14,9 @@ Create a data collection endpoint.
 
 ### CreateExpanded (Default)
 ```
-New-AzDataCollectionEndpoint -Name <String> -ResourceGroupName <String> -Location <String>
- [-SubscriptionId <String>] [-Description <String>] [-IdentityType <String>] [-ImmutableId <String>]
- [-Kind <String>] [-NetworkAclsPublicNetworkAccess <String>] [-Tag <Hashtable>]
+New-AzDataCollectionEndpoint -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+ [-Description <String>] [-IdentityType <String>] [-ImmutableId <String>] [-Kind <String>]
+ [-Location <String>] [-NetworkAclsPublicNetworkAccess <String>] [-Tag <Hashtable>]
  [-UserAssignedIdentity <Hashtable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -247,7 +247,7 @@ Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

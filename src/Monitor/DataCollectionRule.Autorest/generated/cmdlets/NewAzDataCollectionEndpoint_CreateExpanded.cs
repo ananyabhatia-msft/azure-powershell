@@ -142,10 +142,10 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Cmdlets
         public string Kind { get => _body.Kind ?? null; set => _body.Kind = value; }
 
         /// <summary>The geo-location where the resource lives.</summary>
-        [global::System.Management.Automation.Parameter(Mandatory = true, HelpMessage = "The geo-location where the resource lives.")]
+        [global::System.Management.Automation.Parameter(Mandatory = false, HelpMessage = "The geo-location where the resource lives.")]
         [global::Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Category(global::Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.ParameterCategory.Body)]
         [Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Runtime.Info(
-        Required = true,
+        Required = false,
         ReadOnly = false,
         Description = @"The geo-location where the resource lives.",
         SerializedName = @"location",

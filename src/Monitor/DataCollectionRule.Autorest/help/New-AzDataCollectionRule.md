@@ -14,8 +14,8 @@ Create a data collection rule.
 
 ### CreateExpanded (Default)
 ```
-New-AzDataCollectionRule -Name <String> -ResourceGroupName <String> -Location <String>
- [-SubscriptionId <String>] [-DataCollectionEndpointId <String>] [-DataFlow <IDataFlow[]>]
+New-AzDataCollectionRule -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+ [-DataCollectionEndpointId <String>] [-DataFlow <IDataFlow[]>]
  [-DataSourceDataImportEventHubConsumerGroup <String>] [-DataSourceDataImportEventHubName <String>]
  [-DataSourceDataImportEventHubStream <String>] [-DataSourceExtension <IExtensionDataSource[]>]
  [-DataSourceIisLog <IIisLogsDataSource[]>] [-DataSourceLogFile <ILogFilesDataSource[]>]
@@ -31,7 +31,7 @@ New-AzDataCollectionRule -Name <String> -ResourceGroupName <String> -Location <S
  [-DestinationStorageAccount <IStorageBlobDestination[]>]
  [-DestinationStorageBlobsDirect <IStorageBlobDestination[]>]
  [-DestinationStorageTablesDirect <IStorageTableDestination[]>] [-IdentityType <String>] [-Kind <String>]
- [-StreamDeclaration <Hashtable>] [-Tag <Hashtable>] [-UserAssignedIdentity <Hashtable>]
+ [-Location <String>] [-StreamDeclaration <Hashtable>] [-Tag <Hashtable>] [-UserAssignedIdentity <Hashtable>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -813,7 +813,7 @@ Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

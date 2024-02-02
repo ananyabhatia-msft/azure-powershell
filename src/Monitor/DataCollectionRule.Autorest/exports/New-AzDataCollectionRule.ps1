@@ -209,12 +209,6 @@ param(
     # The ID of the target subscription.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Category('Body')]
-    [System.String]
-    # The geo-location where the resource lives.
-    ${Location},
-
     [Parameter(ParameterSetName='CreateExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Category('Body')]
     [System.String]
@@ -403,6 +397,12 @@ param(
     [System.String]
     # The kind of the resource.
     ${Kind},
+
+    [Parameter(ParameterSetName='CreateExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Category('Body')]
+    [System.String]
+    # The geo-location where the resource lives.
+    ${Location},
 
     [Parameter(ParameterSetName='CreateExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.Monitor.DataCollection.Category('Body')]
